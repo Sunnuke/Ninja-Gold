@@ -41,5 +41,6 @@ button{
 
 }
 .activity{
-
+    overflow: auto;
+    height: 100px;
 }
