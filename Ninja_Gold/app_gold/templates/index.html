@@ -8,6 +8,60 @@
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 </head>
 <body>
-    
+    <div id="allBox">
+        <!-- ---------TOP BOX---------------- -->
+        <div id="topBox">
+            <h4 class="yourGold"></h4>
+            <h4 class="totalGold"></h4>
+        </div>
+        <!-- ---------MIDDLE BOX------------- -->
+        <div id="midBox">
+            <!-- ___Farm___ -->
+            <div class="place">
+                <h2></h2>
+                <p></p>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="" value="">
+                    <button type="submit"></button>
+                </form>
+            </div>
+            <!-- ___Cave___ -->
+            <div class="place">
+                <h2></h2>
+                <p></p>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="" value="">
+                    <button type="submit"></button>
+                </form>
+            </div>
+            <!-- ___House___ -->
+            <div class="place">
+                <h2></h2>
+                <p></p>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="" value="">
+                    <button type="submit"></button>
+                </form>
+            </div>
+            <!-- ___Casino___ -->
+            <div class="place">
+                <h2></h2>
+                <p></p>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="" value="">
+                    <button type="submit"></button>
+                </form>
+            </div>
+        </div>
+        <!-- ---------BOTTOM BOX------------- -->
+        <div id="bottomBox">
+            <h5></h5>
+            <div class="activity"></div>
+        </div>
+    </div>
 </body>
 </html>
