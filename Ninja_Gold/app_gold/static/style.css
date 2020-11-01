@@ -1,0 +1,45 @@
+
+/* BODY */
+#allBox{
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+
+
+/* TOPBOX */
+#topBox{
+    flex-wrap: wrap;
+    display: flex;
+}
+.yourGold{
+
+}
+.totalGold{
+    border: 2px solid black;
+    min-width: 200px;
+}
+
+
+/* MIDDLE BOX */
+#midBox{
+    flex-wrap: wrap;
+    display: flex;
+}
+.place{
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+}
+button{
+    box-shadow: 2px 2px 2px black;
+}
+
+
+/* BOTTOM BOX */
+#bottomBox{
+
+}
+.activity{
+
+}
