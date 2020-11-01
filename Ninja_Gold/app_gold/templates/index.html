@@ -12,7 +12,7 @@
         <!-- ---------TOP BOX---------------- -->
         <div id="topBox">
             <h4 class="yourGold">Your Gold:</h4>
-            <h4 class="totalGold"></h4>
+            <h4 class="totalGold">{{request.session.userTotal}}</h4>
         </div>
         <!-- ---------MIDDLE BOX------------- -->
         <div id="midBox">
@@ -20,9 +20,9 @@
             <div class="place">
                 <h2>Farm</h2>
                 <p>(earns 10-20 golds)</p>
-                <form class="form" action="" method="post">
+                <form class="form" action="/process_money" method="POST">
                     {% csrf_token %}
-                    <input type="hidden" name="" value="">
+                    <input type="hidden" name="findGold" value="1">
                     <button type="submit">Find Gold!</button>
                 </form class="form">
             </div>
@@ -30,9 +30,9 @@
             <div class="place">
                 <h2>Cave</h2>
                 <p>(earns 5-10 golds)</p>
-                <form class="form" action="" method="post">
+                <form class="form" action="/process_money" method="POST">
                     {% csrf_token %}
-                    <input type="hidden" name="" value="">
+                    <input type="hidden" name="findGold" value="2">
                     <button type="submit">Find Gold!</button>
                 </form class="form">
             </div>
@@ -40,9 +40,9 @@
             <div class="place">
                 <h2>House</h2>
                 <p>(earns 2-5 golds)</p>
-                <form action="" method="post">
+                <form action="/process_money" method="POST">
                     {% csrf_token %}
-                    <input type="hidden" name="" value="">
+                    <input type="hidden" name="findGold" value="3">
                     <button type="submit">Find Gold!</button>
                 </form>
             </div>
@@ -50,9 +50,9 @@
             <div class="place">
                 <h2>Casino</h2>
                 <p>(earns/takes 0-50 golds)</p>
-                <form action="" method="post">
+                <form action="/process_money" method="POST">
                     {% csrf_token %}
-                    <input type="hidden" name="" value="">
+                    <input type="hidden" name="findGold" value="4">
                     <button type="submit">Find Gold!</button>
                 </form>
             </div>
