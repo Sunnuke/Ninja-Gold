@@ -1,0 +1,2 @@
+# Ninja-Gold
+A mini-game concept were you help a ninja make some money! You set the goals for the ninja, how many moves he has and how much gold he needs to win the game. When you start the game, your ninja will have 0 gold. The ninja can go to different places (farm, cave, house, casino) and earn different amounts of gold. In the case of a casino, your ninja can earn or lose up to 50 gold. And you can monitor the ninja's progess with a display of the past activities of this ninja.
