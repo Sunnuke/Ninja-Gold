@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Gold</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <style>
+        *{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="formBox">
+        <h1>Please Set Your Goals</h1>
+        <h2>Set the "x" amount you think you can make in "x" turns</h2>
+        <form action="/process" method="POST">
+            {% csrf_token %}
+            <h3>Turns:</h3>
+            <input type="number" name="turns" id="turns" value="10">
+            <h3>Goal Amount:</h3>
+            <input type="number" name="goals" id="goals" value="100"><br>
+            <br><button type="submit">START!</button>
+        </form>
+    </div>
+</body>
+</html>

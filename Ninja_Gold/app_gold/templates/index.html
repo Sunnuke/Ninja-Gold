@@ -65,6 +65,10 @@
                     <p class="{{request.session.color}}">{{findGold}}</p>
                 {% endfor %}
             </div>
+            <form action="/reset" method="POST">
+                {% csrf_token %}
+                <button type="submit">RESTART</button>
+            </form>
         </div>
     </div>
 </body>
