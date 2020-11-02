@@ -9,7 +9,7 @@
 
 /* TOPBOX */
 #topBox{
-    flex-wrap: wrap;
+    display: inline-block;
     display: flex;
 }
 .yourGold{
@@ -31,8 +31,10 @@
 .place{
     display: inline-block;
     text-align: center;
-    padding: 10px 20px;
+    padding: 50px 60px;
     border: 2px solid black;
+    margin: 10px 35px;
+
 }
 button{
     box-shadow: 2px 2px 2px black;
