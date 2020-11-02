@@ -60,7 +60,11 @@
         <!-- ---------BOTTOM BOX------------- -->
         <div id="bottomBox">
             <h5>Activities:</h5>
-            <div class="activity"></div>
+            <div class="activity">
+                {% for findGold in request.session.history %}
+                    <p class="{{request.session.color}}">{{findGold}}</p>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </body>

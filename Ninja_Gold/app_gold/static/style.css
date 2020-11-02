@@ -18,6 +18,8 @@
 .totalGold{
     border: 2px solid black;
     min-width: 200px;
+    padding-left: 3px;
+    margin-left: 5px;
 }
 
 
@@ -30,6 +32,7 @@
     display: inline-block;
     text-align: center;
     padding: 10px 20px;
+    border: 2px solid black;
 }
 button{
     box-shadow: 2px 2px 2px black;
@@ -41,6 +44,17 @@ button{
 
 }
 .activity{
+    border: 2px solid black;
     overflow: auto;
     height: 100px;
+    padding: 5px;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.yellow{
+    color: gold;
 }
